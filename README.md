@@ -35,3 +35,9 @@ Este es el diagrama de la aplicación:
 <img width="442" alt="image" src="https://user-images.githubusercontent.com/57050096/117603275-47fc9880-b118-11eb-83eb-39dd7940f55f.png">
 
 # Instalación
+
+Se debe contar con python instalado en el sistema. Python puede ser instalado siguiendo las instrucciones de la página oficial dependiendo de tu sistema operativo en particular:
+
+> https://www.python.org
+
+
