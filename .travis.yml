@@ -3,5 +3,4 @@ language: python
 python:
   - "3.8.2"
 script:
-  - source venv/bin/activate
   - python manage.py test
