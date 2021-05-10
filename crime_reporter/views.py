@@ -11,6 +11,7 @@ from geopy import *
 import json
 
 from .models import Report, CrimeType
+from crime_reporter import forms
 from keys import maps_key
 
 
@@ -28,6 +29,34 @@ def geocode_address(address):
         return None
     else:
         return latitude_longitude
+
+
+# Give me a set of longitude and latitude and I´ll return a set of reports in a radius around the point
+#
+def get_reports(longitude, latitude):
+
+    # We transform the longitude and latitude values to a geos point
+    current_point = geos.fromstr("POINT(%s %s)" % (longitude, latitude))
+    # Radius value to get crime reports from
+    distance_from_point = {'km': 1}
+
+    # We get the crime reports inside the radius given above
+    reports = Report.gis.filter(
+                    location__distance_lte=(
+                            current_point, measure.D(**distance_from_point)
+                    )).annotate(
+                        distance=Distance('location', current_point)
+                    ).order_by('distance')
+
+    # Parse the reports into a JSON response readable by the front end
+    for report in reports:
+        distance_from_point = str(report.distance)
+        distance_from_point = distance_from_point.replace('m', '')
+        distance_from_point = float(distance_from_point)
+
+        report.distance = distance_from_point
+
+    return reports
 
 
 @csrf_exempt
@@ -54,3 +83,59 @@ def add_report(request):
         request,
         'add_report.html'
     )
+
+
+@csrf_exempt
+def index(request):
+
+    address_string = request.GET.get('address')
+
+    if not (address_string is None):
+        is_json = True
+    else:
+        is_json = False
+
+    reports = []
+
+    if not is_json:
+        form = forms.AddressForm(request.POST)
+        if form.is_valid():
+            address = form.cleaned_data['address']
+            point_location = geocode_address(address)
+            if location:
+                latitude, longitude = point_location
+                reports = get_reports(longitude, latitude)
+
+        return render(
+            request,
+            'index.html',
+            {'reports': reports}
+        )
+
+    elif is_json:
+        point_location = geocode_address(address_string)
+        if location:
+            latitude, longitude = point_location
+            reports = get_reports(longitude, latitude)
+
+        reports_dict = {}
+        i = 1
+        for x in reports:
+
+            print(type(x))
+
+            report = {i: str(x.type)}
+            reports_dict.update(report)
+
+            i += 1
+
+        reports_final = {"results": reports_dict, "status": "OK"}
+
+        reports_json = json.dumps(reports_final, indent=4, ensure_ascii=False)
+
+        print(reports_json)
+
+        return HttpResponse(
+            reports_json, content_type='application/json'
+        )
+
