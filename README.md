@@ -12,6 +12,8 @@ Repositorio de la solución web y de backend del proyecto de reportes de crímen
 
 -- [Arquitectura](#Arquitectura)<br>
 
+### [Guía de instalación](#Instalación)<br>
+
 # Resumen_de_la_aplicación
 
 ### Problema_identificado
@@ -32,3 +34,4 @@ Este es el diagrama de la aplicación:
 
 <img width="442" alt="image" src="https://user-images.githubusercontent.com/57050096/117603275-47fc9880-b118-11eb-83eb-39dd7940f55f.png">
 
+# Instalación
