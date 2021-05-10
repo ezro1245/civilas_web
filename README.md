@@ -38,6 +38,16 @@ Este es el diagrama de la aplicación:
 
 # Requerimientos
 
+- Python 3.8.2 o superior
+- Pip
+
+Las demás dependencias del sistema se pueden instalar haciendo uso del comando pip install -r requirements.txt
+
+La base de datos está montada en google cloud, pero los requisitos de la misma si se quiere crear una local son los siguientes:
+
+- PostgreSQL
+- Postgis
+
 # Instalación
 
 Se debe contar con python instalado en el sistema. Python puede ser instalado siguiendo las instrucciones de la página oficial dependiendo de tu sistema operativo en particular:
