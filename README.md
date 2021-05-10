@@ -3,7 +3,7 @@ Repositorio de la solución web y de backend del proyecto de reportes de crímen
 
 ## Tabla de contenidos
 
-[Problema identificado](#Problema identificado)<br>
+[Problema identificado](#Problema_identificado)<br>
 
 [Solución](#Solución)<br>
 
