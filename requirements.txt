@@ -1,2 +1,3 @@
 Django
+jsonfield
 psycopg2-binary
