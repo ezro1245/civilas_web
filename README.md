@@ -44,4 +44,23 @@ Teniendo instalado python tenemos dos opciones:
 - Utilizar el virtual enviroment incluído en el repositorio 
 - Instalar dependecias
 
+Si se utiliza el virtual enviroment se debe introducir este código en la consola desde la carpeta raíz del proyecto:
+> source venv/bin/activate       
+
+Esto activará el virtual enviroment que ya debería de tener instaladas las dependencias necesarias.
+
+
+Si lo anterior no funciona, podemos instalar las dependecias corriendo el siguiente comando:
+> pip install -r requeriments.txt
+
+Podemos comprobar que las depedencias se hayan instalado corriendo el siguiente código
+> pip freeze
+
+esto nos deberá enseñar algo parecido a esto:
+
+<img width="471" alt="image" src="https://user-images.githubusercontent.com/57050096/117608661-24d7e600-b124-11eb-8016-6b7805eeb39b.png">
+
+Una vez esto este listo podemos correr el proyecto con:
+> python manage.py runserver
+
 
