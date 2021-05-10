@@ -16,6 +16,13 @@ Repositorio de la solución web y de backend del proyecto de reportes de crímen
 
 ### [Guía de instalación](#Instalación)<br>
 
+### [Guía de uso](#Uso)<br>
+
+### [Guía de contribución](#Contribución)<br>
+
+### [Roadmap](#Roadmap)<br>
+
+
 # Resumen_de_la_aplicación
 
 ### Problema_identificado
@@ -80,6 +87,53 @@ Una vez esto este listo podemos correr el proyecto con:
 Una vez esté realizado esto y el proyecto corra sin marcar errores nos podemos ir al siguiente enlace y empezar a testear la aplicación:
 
 > 127.0.0.1:8000
+
+# Uso
+
+Usuario final:
+
+> youtube link 
+
+Usuario administrador:
+
+El usuario adminitrador puede crear un super admin con el siguiente comando:
+
+> python manage.py createsuperuser
+
+Una vez creado el super usuario dirigirse a:
+
+> http://127.0.0.1:8000/admin/
+
+Desde ahí se puede modificar la DB
+
+# Contribución
+
+Para contribuir al proyecto, favor de mandar un email a ezrosoftware@gmail.com para dar acceso al repositorio como developer.
+
+Para clonar el repositorio se debe contar con lo siguiente:
+
+- Git instalado
+- Tener acceso al proyecto como developer (mandar email para obtener esto)
+
+Utilizar el comando
+
+> git clone https://github.com/ezro1245/civilas_web.git
+
+Para contribuir al proyecto se deben seguir las reglas de branch:
+
+<img width="442" alt="image" src="https://user-images.githubusercontent.com/57050096/117615330-31157080-b12f-11eb-94d2-4638c4fefbab.png">
+
+Una vez hecho el push, se debe de abrir un merge request, donde se debe listar a una persona asignada a realizarlo, además de esto el push debe de pasar la evaluación de travis-ci. El merge final debe ser aprobado por mi, @ezro-1245
+
+# Roadmap
+
+En un futuro se realizará lo siguiente:
+
+- Permitir al usuario introducir coordenadas por medio de interacción con un mapa
+- Crear perfiles de usuario que permitan guardar un historial de usuarios
+- Realizar deployment en un servidor que tenga el programa en cloud
+- Permitir al usuario definir la hora del siniestro reportado
+- Permitir al usuario filtrar por hora además del lugar
 
 
 
