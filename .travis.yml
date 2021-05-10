@@ -2,5 +2,6 @@ language: python
 
 python:
   - "3.8.2"
+os: osx
 script:
   - python manage.py test
