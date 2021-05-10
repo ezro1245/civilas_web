@@ -6,7 +6,7 @@ Repositorio de la solución web y de backend del proyecto de reportes de crímen
 
 ### [Resumen de la aplicación](#Resumen&nbsp;de&nbsp;la&nbsp;aplicación)<br>
 
-[Problema identificado](#Problema_identificado)<br>
+[Problema identificado](#Problema&nbsp;identificado)<br>
 
 [Solución](#Solución)<br>
 
@@ -14,7 +14,7 @@ Repositorio de la solución web y de backend del proyecto de reportes de crímen
 
 # Resumen&nbsp;de&nbsp;la&nbsp;aplicación
 
-### Problema_identificado
+### Problema&nbsp;identificado
 
 Si bien cada uno de nosotros conoce su barrio, sabe de los problemas que tiene o de qué lugares evitar por razones de seguridad, esto no se puede traducir a la ciudad en general, por lo que una herramienta que permita a los usuarios conocer la situación de criminalidad en distintos barrios de la ciudad puede ser muy útil a la hora de estar preparado y alerta cuando se visita una zona que no se conoce.
 
