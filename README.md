@@ -4,9 +4,9 @@ Repositorio de la solución web y de backend del proyecto de reportes de crímen
 ## Tabla de contenidos
 
 
-[Resumen de la aplicación](#Resumen_aplicación)<br>
+### [Resumen de la aplicación](#Resumen de la aplicación)<br>
 
-[Problema identificado](#Problema_identificado)<br>
+[Problema identificado](#Problema identificado)<br>
 
 [Solución](#Solución)<br>
 
