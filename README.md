@@ -6,11 +6,11 @@ Repositorio de la solución web y de backend del proyecto de reportes de crímen
 
 ### [Resumen de la aplicación](#Resumen_de_la_aplicación)<br>
 
--- [Problema identificado](#Problema_identificado)<br>
+- [Problema identificado](#Problema_identificado)<br>
 
--- [Solución](#Solución)<br>
+- [Solución](#Solución)<br>
 
--- [Arquitectura](#Arquitectura)<br>
+- [Arquitectura](#Arquitectura)<br>
 
 ### [Guía de instalación](#Instalación)<br>
 
@@ -39,5 +39,9 @@ Este es el diagrama de la aplicación:
 Se debe contar con python instalado en el sistema. Python puede ser instalado siguiendo las instrucciones de la página oficial dependiendo de tu sistema operativo en particular:
 
 > https://www.python.org
+
+Teniendo instalado python tenemos dos opciones:
+- Utilizar el virtual enviroment incluído en el repositorio 
+- Instalar dependecias
 
 
