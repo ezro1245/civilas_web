@@ -9,5 +9,5 @@ services:
 install:
   - pip install -r requirements.txt
 script:
-  - sudo apt-get install gdal-bin
+  - sudo apt-get install gdal
   - python manage.py runserver
